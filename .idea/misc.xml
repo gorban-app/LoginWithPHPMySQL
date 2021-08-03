@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/gorban-am/AndroidStudioProjects/LoginWithPHPMySQL/app/src/main/res/layout/activity_login.xml" value="0.2246376811594203" />
+        <entry key="..\:/Users/gorban-am/AndroidStudioProjects/LoginWithPHPMySQL/app/src/main/res/layout/activity_main.xml" value="0.2246376811594203" />
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.23148148148148148" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.13019250253292808" />
       </map>

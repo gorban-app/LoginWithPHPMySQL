@@ -82,6 +82,7 @@
                 android:orientation="vertical">
 
                 <EditText
+                    android:id="@+id/edit_login"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
@@ -96,6 +97,7 @@
                     android:background="@color/grey_5" />
 
                 <EditText
+                    android:id="@+id/edit_password"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
@@ -109,6 +111,8 @@
         </androidx.cardview.widget.CardView>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_auth"
+            android:onClick="btnAuthentication"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_mlarge"
