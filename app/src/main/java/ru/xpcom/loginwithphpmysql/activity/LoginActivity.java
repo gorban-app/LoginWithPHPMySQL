@@ -84,7 +84,8 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<Login> call, Throwable t) {
-
+                // on Failure
+                Log.e("onFailure", t.getMessage());
             }
         });
 

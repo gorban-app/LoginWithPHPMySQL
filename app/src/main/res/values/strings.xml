@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">LoginWithPHPMySQL</string>
+    <string name="error_login">Empty field login</string>
+    <string name="error_password">Empty field password</string>
+    <string name="error_internet">Connection error</string>
+    <string name="error_login_password">Wrong login or password</string>
+    <string name="error_server">Server error</string>
 </resources>
