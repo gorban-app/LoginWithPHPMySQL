@@ -25,21 +25,19 @@ import ru.xpcom.loginwithphpmysql.view.DialogView;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private EditText edit_login, edit_password;
-    private FloatingActionButton btn_auth;
+    private EditText editLogin, editPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
         uiComponent();
     }
 
     public void btnAuthentication(View view) {
 
-        String stringLogin = edit_login.getText().toString();
-        String stringPassword = edit_password.getText().toString();
+        String stringLogin = editLogin.getText().toString();
+        String stringPassword = editPassword.getText().toString();
         if (TextUtils.isEmpty(stringLogin)) {
             DialogView.showDialogError(LoginActivity.this, R.string.error_login);
         } else if (TextUtils.isEmpty(stringPassword)) {
@@ -49,8 +47,6 @@ public class LoginActivity extends AppCompatActivity {
                 loginCheck(stringLogin, stringPassword);
             else DialogView.showDialogError(LoginActivity.this, R.string.error_internet);
         }
-
-
     }
 
     private void loginCheck(String login, String password) {
@@ -92,9 +88,9 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void uiComponent() {
-        edit_login = (EditText) findViewById(R.id.edit_login);
-        edit_password = (EditText) findViewById(R.id.edit_password);
-        btn_auth = (FloatingActionButton) findViewById(R.id.btn_auth);
+        editLogin = (EditText) findViewById(R.id.edit_login);
+        editPassword = (EditText) findViewById(R.id.edit_password);
+        FloatingActionButton btn_auth = (FloatingActionButton) findViewById(R.id.btn_auth);
     }
 
 }
